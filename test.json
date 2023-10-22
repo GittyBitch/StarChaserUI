@@ -1,0 +1,17 @@
+{
+"students":[
+{
+"name":"Heinrich",
+"rating":0
+},
+{
+"name":"Ons",
+"rating":10
+},
+{
+"name":"Svitlana",
+"rating":20
+}
+]
+
+}

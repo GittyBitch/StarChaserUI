@@ -1,11 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title }}</title>
-</head>
+<html><head></head>
 <body>
-    <h1>{{ message }}</h1>
-</body>
-</html>
+<h3>Teilnehmer / Studenten</h3>
 
+<table>
+<tr>
+  <td>Name</td>
+  <td>Rating</td>
+</tr>
+
+{% for student in students %}
+<tr>
+  <td>{{student.name}} </td>
+  <td><input type="button" value="-"/>
+{% for stars in range(student.rating) %}&#127775; {% endfor %}
+
+<input type="button" value="+"/></td>
+</tr>
+{% endfor %}
+
+</table>
+</body></html>
